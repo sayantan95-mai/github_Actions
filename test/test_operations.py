@@ -1,8 +1,8 @@
 import unittest
 from src.calculator.operations import add, subtract, multiply, divide
 
-class TestOperations(unittest.TestCase):
 
+class TestOperations(unittest.TestCase):
     def test_add(self):
         self.assertEqual(add(2, 3), 5)
         self.assertEqual(add(-1, 1), 0)
@@ -24,5 +24,6 @@ class TestOperations(unittest.TestCase):
         with self.assertRaises(ValueError):
             divide(10, 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
