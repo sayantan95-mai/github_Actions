@@ -30,7 +30,7 @@ jobs:
 
       - name: Test with Pytest
         run: |
-          pytest tests/ # Or simply `pytest`
+          pytest test/ # Or simply `pytest`
 
       - name: Run main script (optional smoke test)
         if: matrix.python-version == '3.11' # Only run for one version to save time
